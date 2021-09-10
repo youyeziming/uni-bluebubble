@@ -1,0 +1,60 @@
+.border-box{
+	box-sizing: border-box;
+}
+.bottom-line{
+	box-shadow: 0 2rpx #eee;
+}
+/*flex布局相关 {显示}-{方向}-{主轴定位}-{附轴定位} */
+.flex{
+	display: flex; 
+}
+.flex-col{
+	@extend .flex;
+	flex-direction: column;
+}
+.flex-col-between{
+	@extend .flex-col;
+	justify-content: space-between;
+}
+.flex-col-center-center{
+	@extend .flex-col;
+	justify-content: center;
+	align-items: center;
+}
+.flex-row-between{
+	@extend .flex;
+	justify-content: space-between;
+}
+.flex-row-between-center{
+	@extend  .flex-row-between;
+	align-items: center;
+}
+/*定位相关*/
+@mixin fixed($top:0,$left:0,$bottom:initial,$right:0) {
+	position: fixed;
+	left:$left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
+@mixin sticky($top:0,$left:0,$bottom:initial,$right:0) {
+	position: sticky;
+	left:$left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
+@mixin absolute($top:0,$left:0,$bottom:initial,$right:0) {
+	position:absolute;
+	left:$left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
+@mixin relative($top:0,$left:0,$bottom:initial,$right:0) {
+	position:relative;
+	left:$left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
