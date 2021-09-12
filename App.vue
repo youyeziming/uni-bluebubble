@@ -8,3 +8,7 @@
 		}
 	}
 </script>
+<style lang="scss">
+	@import "./static/font/iconfont.css";
+	
+</style>

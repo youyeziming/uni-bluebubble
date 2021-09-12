@@ -1,0 +1,1 @@
+<view class="massage-item"><view class="picture"><image src="{{img}}"></image><view hidden="{{!(state)}}" class="state">{{state}}</view></view><view class="content"><view class="title"><text>{{title}}</text><text class="date">{{date}}</text></view><view class="message">{{message}}</view></view></view>

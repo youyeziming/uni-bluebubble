@@ -1,0 +1,227 @@
+@charset "UTF-8";
+.border-box, .massage-item .picture .state {
+  box-sizing: border-box;
+}
+.bottom-line {
+  box-shadow: 0 2rpx #eee;
+}
+/*字体和装饰相关*/
+.text-overflow-hidden, .massage-item .content .title text:nth-child(1), .massage-item .content .message {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+/*flex布局相关 {显示}-{方向}-{主轴定位}-{附轴定位} */
+.flex, .flex-col, .flex-col-start-start, .flex-col-between, .flex-col-center-center, .flex-row-start-start, .flex-row-between, .flex-row-between-center, .massage-item, .massage-item .content .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-col, .flex-col-start-start, .flex-col-between, .flex-col-center-center {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.flex-col-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.flex-col-center-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.flex-row-between, .flex-row-between-center, .massage-item, .massage-item .content .title {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.flex-row-between-center, .massage-item, .massage-item .content .title {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+/*定位相关*/
+/* 行为相关颜色 */
+/*界面基本样式*/
+/*内容样式*/
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*字体图标*/
+.massage-item {
+  font-family: PingFangSC-Regular;
+  padding: 18rpx 32rpx;
+  background-color: #ffffff;
+}
+.massage-item:active {
+  background: #eee;
+}
+.massage-item .picture {
+  position: relative;
+  height: 96rpx;
+}
+.massage-item .picture image {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 6rpx;
+}
+.massage-item .picture .state {
+  position: absolute;
+  left: initial;
+  right: 0;
+  top: 0;
+  bottom: initial;
+  text-align: center;
+  line-height: 36rpx;
+  -webkit-transform: translate(25%, -25%);
+          transform: translate(25%, -25%);
+  background: #FF5D5B;
+  height: 36rpx;
+  min-width: 36rpx;
+  border-radius: 10rpx;
+  padding: 0px 10rpx;
+  border-radius: 12rpx;
+  color: #fff;
+}
+.massage-item .content {
+  font-size: 24rpx;
+  color: #fff;
+  padding-left: 32rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+.massage-item .content .title {
+  font-size: 32rpx;
+  color: #272832;
+  letter-spacing: -0.62px;
+}
+.massage-item .content .title text:nth-child(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+  width: 485rpx;
+}
+.massage-item .content .title .date {
+  font-size: 24rpx;
+  color: rgba(39, 40, 50, 0.4);
+  letter-spacing: -0.41px;
+}
+.massage-item .content .message {
+  font-size: 28rpx;
+  width: 500rpx;
+  color: rgba(39, 40, 50, 0.6);
+  letter-spacing: -0.48rpx;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+          flex-grow: 1;
+}
+
+@charset "UTF-8";
+.border-box {
+  box-sizing: border-box;
+}
+.bottom-line, .content .head-menu {
+  box-shadow: 0 2rpx #eee;
+}
+/*字体和装饰相关*/
+.text-overflow-hidden {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+/*flex布局相关 {显示}-{方向}-{主轴定位}-{附轴定位} */
+.flex, .flex-col, .flex-col-start-start, .flex-col-between, .flex-col-center-center, .content, .flex-row-start-start, .flex-row-between, .flex-row-between-center, .content .head-menu, .content .head-menu .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-col, .flex-col-start-start, .flex-col-between, .flex-col-center-center, .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+}
+.flex-col-between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.flex-col-center-center {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.flex-row-between, .flex-row-between-center, .content .head-menu, .content .head-menu .menu {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.flex-row-between-center, .content .head-menu {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+/*定位相关*/
+/* 行为相关颜色 */
+/*界面基本样式*/
+/*内容样式*/
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+/*字体图标*/
+.content {
+  background-color: #f8f8f8;
+}
+.content .head-menu {
+  text-align: center;
+  height: 88rpx;
+  background: #fff;
+  padding: 0 32rpx;
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: initial;
+}
+.content .head-menu image {
+  width: 68rpx;
+  height: 68rpx;
+  border-radius: 8rpx;
+}
+.content .head-menu .menu {
+  width: 88rpx;
+}
+.content .head-menu .menu .icon {
+  font-size: 36rpx;
+}
+.content .all-message {
+  margin-top: 88rpx;
+}
+

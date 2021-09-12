@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "blue bubble",
+  "usingComponents": {
+    "message-item": "/components/MessageItem"
+  }
+}
